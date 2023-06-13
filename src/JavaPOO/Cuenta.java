@@ -25,4 +25,19 @@ public class Cuenta {
 			return false;
 		}
 	}
+	
+	// Se define un Metodo que retorna valor
+	public boolean transferir(double valor, Cuenta cuenta) {
+		if (this.saldo >= valor) {
+			// Se retira salor de la cuenta
+			this.saldo -= valor;
+			// Se deposita saldo en la otra cuenta
+			cuenta.saldo += valor;// Op 1
+			// Se usa el Metodo depositar() de la linea 10
+			//cuenta.depositar(valor); // Op 2
+			return true;
+		} else {
+			return false;
+		}
+	}
 }

@@ -1,10 +1,10 @@
 package JavaPOO;
 
-/* public class CuentaEjercicioThis {
-	[1] double saldo;
+public class CuentaEjercicioThis {
+	double saldo;
 	int numero;
 	
-	void deposita([2] double valor) {
-		[3]saldo = [4]saldo + [5]valor;
+	void deposita(double valor) {
+		this.saldo = this.saldo + valor;
 	}
-} */
+}
