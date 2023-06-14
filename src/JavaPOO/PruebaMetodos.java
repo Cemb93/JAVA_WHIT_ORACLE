@@ -5,13 +5,13 @@ public class PruebaMetodos {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Cuenta miCuenta = new Cuenta();
-		miCuenta.saldo = 300;
+		//miCuenta.saldo = 300;
 		//Metodo creado en Cuenta.java
 		miCuenta.depositar(200);
-		System.out.println("Depositando: " + miCuenta.saldo);
+		System.out.println("Depositando: " + miCuenta.getSaldo());
 		
 		miCuenta.retirar(100);
-		System.out.println("Retirando: " + miCuenta.saldo);
+		System.out.println("Retirando: " + miCuenta.getSaldo());
 		
 		Cuenta cuentaDeJimena = new Cuenta();
 		cuentaDeJimena.depositar(1000);
@@ -22,8 +22,8 @@ public class PruebaMetodos {
 		} else {
 			System.out.println("Fallo!!");			
 		}
-		System.out.println("cuentaDeJimena: " + cuentaDeJimena.saldo);
-		System.out.println("miCuenta: " + miCuenta.saldo);
+		System.out.println("cuentaDeJimena: " + cuentaDeJimena.getSaldo());
+		System.out.println("miCuenta: " + miCuenta.getSaldo());
 	}
 
 }

@@ -1,10 +1,11 @@
 package JavaPOO;
 //     Entidad Cuenta
 public class Cuenta {
-	double saldo;
-	int agencia;
-	int numero;
-	Cliente titular;
+	private double saldo;// Encapsulamiento
+	private int agencia;
+	//private int numero;
+	// Cliente titular;
+	Cliente titular = new Cliente();
 	
 	//Se define un Metodo que no retorna valor
 	public void depositar(double valor) {
@@ -39,5 +40,23 @@ public class Cuenta {
 		} else {
 			return false;
 		}
+	}
+	
+	// Se define Metodo "get" por convensión = Obtener
+	public double getSaldo() {
+		return this.saldo;
+	}
+	
+	// Se define Metodo "set" por convensión = Asignar
+	public void setAgencia(int newAgencia) {
+		if (newAgencia > 0) {
+			this.agencia = newAgencia;			
+		} else {
+			System.out.println("El valor no puede ser 0 || un número negativo");
+		}
+	}
+	
+	public int getAgencia() {
+		return agencia;
 	}
 }

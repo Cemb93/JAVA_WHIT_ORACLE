@@ -7,12 +7,12 @@ public class CrearCuenta {
 		// Variable de tipo "Cuenta" para la "Instancia"
 		// Variable -> Ref   = Valor 
 		Cuenta primeraCuenta = new Cuenta();
-		primeraCuenta.saldo = 1000;
-		System.out.println(primeraCuenta.saldo);
+		//primeraCuenta.numero = 1000;
+		System.out.println(primeraCuenta);
 		
 		Cuenta segundaCuenta = new Cuenta();
-		segundaCuenta.saldo = 500;
-		System.out.println(segundaCuenta.saldo);
+		//segundaCuenta.numero = 500;
+		System.out.println(segundaCuenta);
 	}
 
 }
