@@ -4,7 +4,7 @@ public class Cuenta {
 	double saldo;
 	int agencia;
 	int numero;
-	String titular;
+	Cliente titular;
 	
 	//Se define un Metodo que no retorna valor
 	public void depositar(double valor) {

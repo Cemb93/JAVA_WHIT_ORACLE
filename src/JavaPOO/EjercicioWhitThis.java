@@ -1,6 +1,6 @@
 package JavaPOO;
 
-public class CuentaEjercicioThis {
+public class EjercicioWhitThis {
 	double saldo;
 	int numero;
 	
