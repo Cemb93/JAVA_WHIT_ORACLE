@@ -1,11 +1,27 @@
 package JavaPOO;
 //     Entidad Cuenta
 public class Cuenta {
-	private double saldo;// Encapsulamiento
+	// Encapsulamiento de atributos
+	private double saldo;
 	private int agencia;
-	//private int numero;
+	private int numero;
 	// Cliente titular;
-	Cliente titular = new Cliente();
+	private Cliente titular = new Cliente();
+	
+	// static => variable de la Clase no va a ser alterada por ninguna Instancia
+	private static int total = 0;
+	
+	// Constructor
+	public Cuenta(int agencia) {
+		if (agencia <= 0) {
+			System.out.println("No se permiten valores menores a 1");
+			this.agencia = 1;
+		} else {
+			this.agencia = agencia;
+		}
+		total++;
+		System.out.println("Cuenta " + total + " fue creada.");
+	}
 	
 	//Se define un Metodo que no retorna valor
 	public void depositar(double valor) {
@@ -58,5 +74,13 @@ public class Cuenta {
 	
 	public int getAgencia() {
 		return agencia;
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public Cliente getTitular() {
+		return titular;
 	}
 }
