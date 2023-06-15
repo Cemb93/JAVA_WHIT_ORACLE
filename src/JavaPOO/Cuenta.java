@@ -11,13 +11,19 @@ public class Cuenta {
 	// static => variable de la Clase no va a ser alterada por ninguna Instancia
 	private static int total = 0;
 	
+	public static int getTotal() {
+		return Cuenta.total;
+	}
+	
 	// Constructor
-	public Cuenta(int agencia) {
+	public Cuenta(int agencia, int numero) {
 		if (agencia <= 0) {
 			System.out.println("No se permiten valores menores a 1");
 			this.agencia = 1;
 		} else {
 			this.agencia = agencia;
+			this.numero = numero;
+			this.saldo = 100;
 		}
 		total++;
 		System.out.println("Cuenta " + total + " fue creada.");
