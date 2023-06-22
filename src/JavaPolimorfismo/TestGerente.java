@@ -13,6 +13,11 @@ public class TestGerente {
 		gerente.setClave("AluraCursosOnLine");
 		boolean autentico = gerente.iniciarSesion("AluraCursosOnLine");
 		System.out.println("Eres Gerente? " + autentico);
+		
+		//TODO EJERCICIO SOBRECARGA
+		gerente.setLogin("Carlos");
+		boolean autentico2 = gerente.iniciarSesion("Carlos", "AluraCursosOnLine");
+		System.out.println("Eres realmente un Gerente? " + autentico2);
 	}
 
 }
