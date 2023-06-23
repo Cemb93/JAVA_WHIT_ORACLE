@@ -11,9 +11,13 @@ public class TestControlBonificacion {
 		// $10.000 x 5% (0.05) + $100 (por ser un funcionario) = $600
 		jimena.setSalario(10000);
 		
+		Contador alexis = new Contador();
+		alexis.setSalario(5000);
+		
 		ControlBonificacion controlBonificacion = new ControlBonificacion();
 		controlBonificacion.registrarSalario(diego);
 		controlBonificacion.registrarSalario(jimena);
+		controlBonificacion.registrarSalario(alexis);
 	}
 
 }
