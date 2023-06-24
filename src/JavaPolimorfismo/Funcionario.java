@@ -35,11 +35,8 @@ public abstract class Funcionario {
 		this.salario = salario;
 	}
 	
-	
-	// Bonificacion del salario
-	public double getBonificacion() {
-		return this.salario * 0.05;
-	}
+	// Metodo abstracto
+	public abstract double getBonificacion();
 
 	public int getTipo() {
 		return tipo;

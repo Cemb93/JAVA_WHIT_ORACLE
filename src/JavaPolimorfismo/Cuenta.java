@@ -1,8 +1,8 @@
 package JavaPolimorfismo;
 //     Entidad Cuenta
-public class Cuenta {
+public abstract class Cuenta {
 	// Encapsulamiento de atributos
-	private double saldo;
+	protected double saldo;
 	private int agencia;
 	//private int numero;
 	private Cliente titular = new Cliente();
@@ -22,16 +22,14 @@ public class Cuenta {
 		} else {
 			this.agencia = agencia;
 			//this.numero = numero;
-			//this.saldo = 100;
 		}
 		total++;
 		System.out.println("Cuenta " + total + " fue creada.");
 	}
 	
 	//Se define un Metodo que no retorna valor
-	public void depositar(double valor) {
-		this.saldo += valor;
-	}
+	// Para definir metodos abstractos la clase debe de se abstracta
+	public abstract void depositar(double valor);
 	
 	// Se define un Metodo que retorna valor
 	public boolean retirar(double valor) {

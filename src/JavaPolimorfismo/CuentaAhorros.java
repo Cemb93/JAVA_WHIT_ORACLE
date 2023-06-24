@@ -7,4 +7,10 @@ public class CuentaAhorros extends Cuenta {
 		super(agencia, numero);
 	}
 
+	@Override
+	public void depositar(double valor) {
+		// TODO Auto-generated method stub
+		this.saldo += valor;
+	}
+
 }

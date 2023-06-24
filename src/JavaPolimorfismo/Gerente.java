@@ -42,7 +42,7 @@ public class Gerente extends Funcionario {
 		 * @author Palabra reservada "super"
 		 * Con esta se tiene accedo a los metodos de la Clase padre (Funcionario)
 		 * */
-		return super.getSalario() + super.getBonificacion();
+		return super.getSalario() + super.getSalario() * 0.05;
 	}
 	
 	//TODO EJERCICIO SOBRECARGA
