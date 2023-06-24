@@ -3,8 +3,7 @@ package JavaPolimorfismo;
 public class TestFuncionario {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Funcionario diego = new Funcionario();
+		Funcionario diego = new Contador();
 		diego.setNombre("Diego");
 		diego.setDocumento("21465487");
 		diego.setSalario(2000);

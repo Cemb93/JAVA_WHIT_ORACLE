@@ -3,8 +3,7 @@ package JavaPolimorfismo;
 public class TestReferencias {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Funcionario funcionario = new Funcionario();
+		Funcionario funcionario = new Contador();
 		funcionario.setNombre("Beto");
 		
 		Gerente gerente = new Gerente();
