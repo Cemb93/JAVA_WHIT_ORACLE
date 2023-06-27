@@ -2,7 +2,7 @@ package JavaPolimorfismo;
 
 //TODO HERENCIA
 //                 extiende de
-public class Gerente extends Funcionario {
+public class Gerente extends FuncionarioAutenticable {
 	private String clave;
 	//TODO EJERCICIO SOBRECARGA
 	private String login;
@@ -10,10 +10,6 @@ public class Gerente extends Funcionario {
 	//TODO EJERCICIO SOBRECARGA
 	public String getClave() {
 		return clave;
-	}
-	
-	public void setClave(String clave) {
-		this.clave = clave;
 	}
 	
 	//TODO EJERCICIO SOBRECARGA
@@ -24,17 +20,6 @@ public class Gerente extends Funcionario {
 	public void setLogin(String login) {
 		this.login = login;
 	}
-
-	public boolean iniciarSesion(String clave) {
-		//return clave == "AluraCursosOnLine";
-		
-		//TODO EJERCICIO
-		if (this.clave == clave) {
-			return true;
-		} else {
-			return false;
-		}
-	}
 	
 	//Sobre-escribiendo el metodo
 	public double getBonificacion() {
@@ -42,7 +27,8 @@ public class Gerente extends Funcionario {
 		 * @author Palabra reservada "super"
 		 * Con esta se tiene accedo a los metodos de la Clase padre (Funcionario)
 		 * */
-		return super.getSalario() + super.getSalario() * 0.05;
+		// return super.getSalario() + super.getSalario() * 0.05;
+		return 2000;
 	}
 	
 	//TODO EJERCICIO SOBRECARGA
