@@ -2,7 +2,7 @@ package JavaPolimorfismo;
 
 //TODO HERENCIA
 //                 extiende de
-public class Gerente extends FuncionarioAutenticable {
+public class Gerente extends Funcionario implements Autenticable {
 	private String clave;
 	//TODO EJERCICIO SOBRECARGA
 	private String login;
@@ -38,6 +38,18 @@ public class Gerente extends FuncionarioAutenticable {
 		} else {
 			return false;
 		}
+	}
+
+	@Override
+	public void setClave(String clave) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean iniciarSesion(String clave) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 }

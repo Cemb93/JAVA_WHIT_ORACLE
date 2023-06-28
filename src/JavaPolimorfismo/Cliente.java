@@ -1,9 +1,10 @@
 package JavaPolimorfismo;
 
-public class Cliente {
+public class Cliente implements Autenticable {
 	private String nombre;
 	private String documento;
 	private String telefono;
+	private String clave;
 	
 	public String getNombre() {
 		return nombre;
@@ -22,6 +23,15 @@ public class Cliente {
 	}
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
+	}
+	@Override
+	public boolean iniciarSesion(String clave) {
+		return this.clave == clave;// MIN 6:46
+	}
+	@Override
+	public void setClave(String clave) {
+		// TODO Auto-generated method stub
+		this.clave = clave;
 	}
 	
 }
