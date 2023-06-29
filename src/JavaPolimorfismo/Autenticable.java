@@ -3,6 +3,7 @@ package JavaPolimorfismo;
 /**
  * Una interface NO puede extender de una Clase
  * Una interface SI puede extender de una Interface
+ * Una interface por defecto es abstracta
  * */
 public interface Autenticable {
 	
